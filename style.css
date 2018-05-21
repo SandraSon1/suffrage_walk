@@ -1,0 +1,548 @@
+/*MAP*/
+#map {
+  height: 88%;
+  margin: auto;
+  width: 100%;
+  padding-top: 0%;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 224, 224);
+}
+
+span {
+  z-index: 2;
+}
+
+.headerbar {
+  background-color: rgb(173, 170, 170);
+}
+.headerlogo {
+  height: 20%;
+  width: 20%;
+  float: right;
+  margin-top: -20%;
+  margin-right: 2.5%;
+}
+
+h1 {
+  font-family: Philosopher;
+  color: black;
+  font-size: 2.75em;
+  margin: auto;
+  margin-top: -5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+/*INDEX*/
+
+.indeximg {
+  height: 25%;
+  width: 45%;
+  margin-top: 45%;
+}
+
+.button1 {
+  background-color: rgb(176,177,177); 
+  border: none;
+  color: white;
+  padding: 20px;
+  font-family: Philosopher;
+  font-size: 3em;
+  border-radius: 12px;
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  margin-top: 10%;
+}
+
+/*SIGN*/
+
+.signimg {
+  height: 10%;
+  width: 45%;
+  margin-top: 10%;
+}
+
+.button2 {
+  background-color: rgb(176,177,177); 
+  border: none;
+  color: white;
+  padding: 20px;
+  font-family: Philosopher;
+  font-size: 2em;
+  border-radius: 12px;
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+.sign {
+  width: 86%;
+  border-color: rgb(123,124,124);
+  border-width: .5px;
+  margin-top: 1%;
+}
+
+.box {
+  background-color: rgb(176,177,177);
+  padding: 20px;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signinput {
+  background-color: rgb(176,177,177); 
+  border: none;
+  color: white;
+  padding-top: 20px;
+  font-family:Roboto ;
+  font-size: 1.25em;
+  border-radius: 12px;
+  width: 85%;
+}
+
+/*LOGIN*/
+.logininput {
+  background-color: rgb(176,177,177); 
+  border: none;
+  color: white;
+  padding-top: 20px;
+  font-family:Roboto ;
+  font-size: 1.25em;
+  border-radius: 12px;
+  width: 85%;
+}
+
+
+.policyp{
+  font-family: Roboto;
+  font-size: 1.25em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.policyhr {
+  width: 125px;
+  border-color: rgb(123,124,124);
+  border-width: 1px;
+  margin-left: 0%;
+}
+
+.box2 {
+  background-color: rgb(255,255,255);
+  padding:5px;
+  width: 93%;
+  border-radius: 12px;
+  margin-left: 2.5%;
+}
+
+.mapbutton {
+  background-color: rgb(196,196,196); 
+  border: none;
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Roboto;
+  font-size: 1.25em;
+  border-radius: 12px;
+  margin-top: 2%;
+  float: right;
+  text-align: left;
+  margin-right: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*POLICIES NZ FIRSTS*/
+.NZ1 {
+  background-color: rgb(67,67,70); 
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 2.25em;
+  border-radius: 12px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 3%;
+}
+
+/*POLICY NZ FIRSTS*/
+.policyNZ {
+  background-color: rgb(67,67,70); 
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 1.5em;
+  border-radius: 12px;
+  width: 72%;
+  margin-left: 3.5%;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.policyNZhr {
+  width: 215px;
+  border-color: rgb(123,124,124);
+  border-width: 1px;
+  margin-left: 0%;
+}
+
+/*POLICIES GREEN*/
+.green1 {
+  background-color: rgb(96,176,111);
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 2.25em;
+  border-radius: 12px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 3%;
+}
+
+/*POLICY GREEN*/
+.policyG {
+  background-color: rgb(96,176,111); 
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 1.5em;
+  border-radius: 12px;
+  width: 72%;
+  margin-left: 3.5%;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.policyGhr {
+  width: 165px;
+  border-color: rgb(123,124,124);
+  border-width: 1px;
+  margin-left: 0%;
+}
+
+/*POLICIES NATIONAL*/
+.national1 {
+  background-color: rgb(46,140,205);
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 2.25em;
+  border-radius: 12px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 3%;
+}
+
+/*POLICY NATIONAL*/
+.policyN {
+  background-color: rgb(46,140,205); 
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 1.5em;
+  border-radius: 12px;
+  width: 72%;
+  margin-left: 3.5%;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.policyNhr {
+  width: 135px;
+  border-color: rgb(123,124,124);
+  border-width: 1px;
+  margin-left: 0%;
+}
+
+/*POLICIES ACT*/
+.act1 {
+  background-color: rgb(254,225,81); 
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 2.25em;
+  border-radius: 12px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 3%;
+}
+
+/*POLICY ACT*/
+.policyA {
+  background-color: rgb(254,225,81);  
+  border: none;
+  color: white;
+  padding: 15px;
+  font-family: Philosopher;
+  font-size: 1.5em;
+  border-radius: 12px;
+  width: 72%;
+  margin-left: 3.5%;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.policyAhr {
+  width: 85px;
+  border-color: rgb(123,124,124);
+  border-width: 1px;
+  margin-left: 0%;
+}
+
+
+/*MAP*/
+
+.policybutton {
+  background-color: rgb(196,196,196); 
+  border: none;
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Roboto;
+  font-size: 1.25em;
+  border-radius: 12px;
+  margin-top: 2%;
+  margin-left: 12%;
+  z-index: 2;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*NAVBAR*/
+
+.navbaricon {
+	height: 20%;
+	width: 15%;
+	margin-bottom: -15%;
+  margin-left: 5%;
+
+}
+
+/* The side navigation menu */
+hr {
+  width: 75%;
+  align: center;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:rgb(173, 170, 170); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding-left: 15%;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: rgb(224,224,224);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+  float: left;
+}
+
+
+/* On smaller screens, where height is 
+less than 450px, change the style of the 
+sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+}
+
+/*MODAL*/
+
+/* (background) */
+#myModal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
+}
+
+.modal-content {
+  font-family: Roboto;
+    font-size: 1.25em;
+    background-color: rgb(224, 224, 224);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 12px;
+    margin-top: 50%;
+}
+
+/* The Close Button */
+.closemodal {
+    color: black;
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#modalbutton {
+  background-color: rgb(196,196,196); 
+  border: none;
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Roboto;
+  font-size: 1.25em;
+  border-radius: 12px;
+  margin-top: 15%;
+  margin-left: 2%;
+  z-index: 2;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+/*SCREEN SIZE*/
+
+@media (max-width: 500px) {
+  .desktop{display: none;}
+  .mobile{display: show;}
+}
+
+
+@media (min-width: 500px) {
+  .desktop{display: show;}
+  .mobile {display: none;}
+}
+
+.desktop {
+background-color: rgb(224, 224, 224);
+}
+
+/*DESKTOP*/
+
+.desktopimg {
+  height: 25%;
+  width: 25%;
+}
+
+.desktoph1 {
+  font-size: 4em;
+  margin-top: 10%;
+
+
+}
+
+.desktopp {
+  font-size: 1.5em;
+  font-family: Roboto;
+  color: black;
+  margin-top: -3%;
+  margin-bottom: 0%
+}
+.desktopp2 {
+  font-size: 1.25em;
+  font-family: Roboto;
+  color: black;
+  margin-top: 0%;
+}
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+   color: white;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 5;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+.flex-container{
+  height:100%;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#mapbutt{
+    border-radius: 6px;
+    background-color: #91D4FA;
+    border:none;
+    font-size: 12px;
+    letter-spacing:0.5em;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+
+  
+    }
+
+
+
