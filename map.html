@@ -6,7 +6,7 @@
     <link rel="icon" href="images/logo.png" >
     
     <link href="style.css" rel="stylesheet">
-    <script src="scripts/scriptnavbar.js"></script>
+
  
     <script src="scripts/map.js"></script>
 
@@ -39,69 +39,18 @@
 
     </div>
 
-    <div class="mobile">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <br>
-          <br>
-          <hr>
-        <a  href="parties.html">Parties</a>
-          <hr>
-          <br>
-        <a href="index.html">Sign Out</a>
-          <hr>
-          <br>
-      </div>
+   
 
     	<div class="headerbar"> 
-        <span onclick="openNav()">
-          <img class="navbaricon" src="images/navbaricon.png">
-        </span>
+        
     	  <h1>Speak Up </h1>
         <img class="headerlogo" src="images/logo.png">
       </div>
      
 
 
-      <!-- Trigger/Open The Modal -->
-      <button id="modalbutton">Information</button>
-
-      <!-- The Modal -->
-      <div id="myModal"  class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="closemodal">&times;</span>
-          <p> The markers show others using the app near you, click on them to find out where.</p>
-        </div>
-
-        <script>
-          // Get the modal
-          var modal = document.getElementById('myModal');
-
-          // Get the button that opens the modal
-          var btn = document.getElementById("modalbutton");
-
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("closemodal")[0];
-
-          // When the user clicks the button, open the modal 
-          btn.onclick = function() {
-              modal.style.display = "block";
-          }
-
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
-              modal.style.display = "none";
-          }
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-        </script>
+     
+   
 
             <script>
 function closeNav() {
