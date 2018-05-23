@@ -8,15 +8,28 @@
     <link href="style.css" rel="stylesheet">
 
  
+    <!-- <script src="scripts/markers.js"></script> -->
     <script src="scripts/map.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Philosopher|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant Garamond" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
    
   </head>
  
   <body>
+    <div id="myNav" class="overlay">
+      <div class="flex-container">
+        <div id="startWalking">Start Walking</div>
+
+        <div>
+            <br>
+            <br>
+            <a  class="button" id="mapbutt" onclick="closeNav()">MAP</a>
+        </div>
+      </div>
+    </div>
+
 
     <div class="desktop">
       <center>
@@ -27,53 +40,32 @@
         </p>
         <img class="desktopimg" src="images/logo.png">
       </center>
-      
     </div>
 
-       <div id="myNav" class="overlay">
-          <div class="flex-container">
-              <div id="startWalking">Start Walking</div>
-              <div><br><br><a  class="button" id="mapbutt" onclick="closeNav()">MAP</a></div>
-  
-          </div>
-
-    </div>
-
-   
-
-    	<div class="headerbar"> 
-        
-    	  <h1>Speak Up </h1>
-        <img class="headerlogo" src="images/logo.png">
+    <div class="mobile">
+      <div class="headerbar"> 
+          
+    	  <h1 class="headerfont">Suffragettes Walk</h1>
+        <!-- <img class="headerlogo" src="images/logo.png">   -->   
       </div>
-     
 
+      <script>
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          document.getElementById("mapbutt").style.display = "none";
+          document.getElementById("startWalking").style.display = "none";
+        }
+      </script>
 
-     
-   
-
-            <script>
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    document.getElementById("mapbutt").style.display = "none";
-     document.getElementById("startWalking").style.display = "none";
-
-}
-</script>
-
-
-      </div>
 
       <div id="map">
       </div>
 
       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAevtQ8Ww4oIAghz1p9fq7OLq_ctelbcJo&callback=myMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAevtQ8Ww4oIAghz1p9fq7OLq_ctelbcJo&callback=myMap">
       </script>
 
-    </div>
-
-    
+    </div>  
   </body>
 
 </html>
