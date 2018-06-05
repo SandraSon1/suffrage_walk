@@ -1,71 +1,92 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
-    <title></title>
-
+    <title>Sufragettes Walk</title>
     <link rel="icon" href="images/logo.png" >
-    
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-
- 
-    <!-- <script src="scripts/markers.js"></script> -->
-    <script src="scripts/map.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Cormorant Garamond" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width,initial-scale=1">
-   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+
   </head>
  
-  <body>
-    <div id="myNav" class="overlay">
-      <div class="flex-container">
-        <div id="startWalking">Start Walking</div>
+  
+    <body>
 
-        <div>
-            <br>
-            <br>
-            <a  class="button" id="mapbutt" onclick="closeNav()">MAP</a>
+    <!-- Mobile devices only  -->
+      <div class="desktop">
+        <center>
+          <h1 class="desktoph1">Suffragettes Walk</h1>
+          <p class="desktopp" > Only available on mobile devices. </p>
+          <img class="desktopimg" src="images/logo.png">
+        </center>
+      </div>
+
+      <div class="mobile">
+       <!--  snackbar -->
+        <div id="toast">
+          <div id="img"> </div>
+          <div id="desc">Click on the help box</div>
         </div>
+        <!-- overlay -->
+        <script> 
+          $(document).ready(function(){
+            $("#mapbutt").click(function(){
+              $("#load").fadeIn();
+            });
+          });
+        </script>
+        <div id="myNav" class="overlay">
+          <div class="flex-container">
+            <div>
+              <a id="mapbutt">START JOURNEY</a>               
+            </div>
+          </div>
+        </div>
+         <!-- Header -->
+        <div class="headerbar"> 
+          <h1 class="headerfont">Suffragettes Walk</h1>
+          <a href="index.html">
+            <img class="headerlogo" src="images/logo.png"> 
+          </a>  
+        </div>
+
+           
+            <!-- Trigger/Open The Modal -->
+            <button id="modalbutton">Help</button>
+            <!-- The Modal -->
+            <div id="myModal"  class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="closemodal">&times;</span>
+                  <center>
+                    <p>Te Papa</p>
+                  
+                    <p> ... </p>
+                  </center>
+              </div>
+            </div>
+
+
+            <div id="map"></div>
+
+       
+
       </div>
-    </div>
 
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAevtQ8Ww4oIAghz1p9fq7OLq_ctelbcJo">
+       </script>
+  <script src="scripts/infobox_packed.js" type="text/javascript"></script> 
+       <script src="scripts/map.js"></script>
+       
 
-    <div class="desktop">
-      <center>
-        <h1 class="desktoph1" >Speak Up</h1>
-        <p class="desktopp" > Only available on mobile devices. 
-        </p>
-        <p class="desktopp2" > Download the app today to stay up to date on New Zealand's Policies. 
-        </p>
-        <img class="desktopimg" src="images/logo.png">
-      </center>
-    </div>
-
-    <div class="mobile">
-      <div class="headerbar"> 
-          
-    	  <h1 class="headerfont">Suffragettes Walk</h1>
-        <!-- <img class="headerlogo" src="images/logo.png">   -->   
-      </div>
-
-      <script>
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-          document.getElementById("mapbutt").style.display = "none";
-          document.getElementById("startWalking").style.display = "none";
-        }
-      </script>
-
-
-      <div id="map">
-      </div>
-
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAevtQ8Ww4oIAghz1p9fq7OLq_ctelbcJo&callback=myMap">
-      </script>
-
-    </div>  
-  </body>
+    </body>
 
 </html>
