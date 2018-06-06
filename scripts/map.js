@@ -165,7 +165,7 @@ function geolocate() {
 
  var image = {
         url: 'images/finished_katebody.png', 
-        scaledSize: new google.maps.Size(31, 60), 
+        scaledSize: new google.maps.Size(29, 60), 
     
         };
 
